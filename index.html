@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Silkscreen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="index.css">
+ <!---Agregar normalize code ---->
+    <title>My portafolio</title>
+</head>
+<body >
+  <div class="body">
+  <header>
+    <div class="logoBox" alt="">
+      <a href="index.html">
+        <img src="logo.png" class="logo"  alt=""/>
+     </a>
+    </div>
+    <div class="navBox">
+      <button class="open-btnBox" id="open-btn" aria-label="toggle navigation"> &#9776;</button>  
+        <ul class="nav__list" id="nav__list">
+          <button class="close-btnBox"  id="close-btn" aria-label="toggle navigation"> &times; </button>
+          <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="projects.html" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="aboutme.html" class="nav__link">About Me</a></li>
+        </ul>
+      </div>
+    
+  </header>
+    <!----- Introduccion ----->
+    <!--- Chequear si necesito agregar un id a home --->
+  <section class="intro">
+      <h1 class="title-intro"> Hi, I am <br> <span class="name-title"> Raquel Campos </span></h1>
+      <h2 class="subtitle-intro"> Email/Front-End Developer</h2>
+      <img class="profile-picture"  src="profile.jpeg" alt=""/>
+  </section>
+
+    <!---- Projects ---->
+  <section class="projects">
+        <h2 class="projects-title">Projects</h2>
+        <div class="containers">
+             <div class="container">
+               <a href="https://effervescent-tanuki-ff23f9.netlify.app/">Commercial Email</a><br>
+               <img class="project-images"  src="CommercialEmail.jpg" width="200px"   alt=""/><br>
+               <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, corrupti.</p>
+             </div>
+             <div class="container" >
+               <a href="https://jade-starlight-24e734.netlify.app/">Newsletter Email</a><br>
+               <img class="project-images"    src="NewsLetter.jpg" width="200px" alt=""/> <br>
+               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, explicabo.</p>
+             </div>
+             <div class="container" >
+               <a href="https://marvelous-daifuku-95c3a2.netlify.app/">Transactional Email</a><br>
+               <img  class="project-images"   src="TransactionalEmail.jpg" width="200px" alt=""/><br>
+               <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga adipisci labore nulla quis porro enim?</p>
+             </div>
+             <div class="container" >
+                <a href="https://65921c691f7c2b6c6ef0de78--effervescent-tartufo-181ca5.netlify.app/">Real State Landing Page</a><br>
+                <img src="RealStatePage.jpg " class="project-images"    widht="200px" /><br>
+                <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, laudantium.</p>  
+            </div> 
+            <div class="container" >
+              <a href="https://stirring-horse-fa377a.netlify.app/">Landing Page </a><br>
+              <img src="YogaClassPage.jpg" width="200px" class="project-images"/>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, mollitia?</p>
+            </div>   
+        </div>
+  </section>
+
+  <!---SKILLS--->
+ <section class="skills">
+  <h2 class="skill-title">Skills</h2>
+  <div class="skills-container">
+      <div class="skill-container-inside">
+        <img src="photoshop.png" class="skills-images"  alt=""/>
+        <p>PhotoShop</p>
+      </div>
+
+      <div class="skill-container-inside">
+        <img src="html5.png" class= "skills-images"   alt=""/>
+        <p>HTML5</p>
+      </div>
+        
+      <div class="skill-container-inside" >
+        <img src="css3.png" class= "skills-images"  alt=""/>
+        <p>CSS3</p>
+      </div> 
+
+      <div class="skill-container-inside">
+        <img src="javaScript.png" class="skills-images"  alt=""/>
+      <p>JavaScript</p>
+      </div>
+  </div>
+  
+  <div class="WorkProcess">
+    <h2 class="workprocess-title">Work Process</h2>
+    <div class="WorkProcessContainer">
+      <div class="workcontainer">
+       <p>Develop</p>
+       <span class="material-symbols-outlined"> deployed_code</span></p>
+      </div>
+      <div class="workcontainer">
+        <p>Test</p>
+        <span class="material-symbols-outlined">deployed_code_update</span>
+      </div>
+      <div class="workcontainer">
+        <p>Launch</p><span class="material-symbols-outlined">
+          rocket_launch
+          </span>
+      </div> 
+    </div>
+  </div> 
+ </section>
+
+ <!----ABOUT ME ---->
+ <section class="about-me">
+     <h2 class="about-me-title">About Me</h2> 
+    <p> I enjoy building beautiful responsive emails and websites</p>
+
+ </section>
+
+ <!---FOOTER--->
+ <footer>
+    <a href = "mailto: ra_cartaya@icloud.com" class="email" target=”_blank” >ra_cartaya@icloud.com</a><br>
+     <a href="https://github.com/raquecoder" target=”_blank” >
+      <img src="github.png" width="25px"/>
+     </a>
+     <a href="https://www.linkedin.com/in/raquelcampos-frontend-developer/" target=”_blank” >
+      <img src="in.png" width="25px"/>
+     </a>
+    <a href="index.html">
+      <img src="logo.png" width="120px" alt=""/>
+    </a>
+    <p class="copyrights"> &copy; Raquel Campos 2024</p>
+ </footer>
+  </div>
+ <script src="index.js"></script>
+</body>
+</html>
