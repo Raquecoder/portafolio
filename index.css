@@ -34,6 +34,11 @@ a{
    font-size: 1.5rem;
    text-decoration: none;
 }
+a:hover,
+a:focus,
+a:active {
+ text-decoration: underline;
+}
 
 .open-btnBox {
    display: none;
@@ -51,10 +56,6 @@ a{
 .intro{
    margin:auto;
    height:40vh;
-}
-
-.title-intro{
- 
 }
 
 .name-title {
@@ -81,7 +82,8 @@ a{
    z-index: 1;
    margin:70px 200px;
 }
-.contact-btn{
+.contact-btn,
+.github-btn{
    margin-top: 10px;
    padding: 15px 45px;
    font-size: 1rem;
@@ -98,6 +100,13 @@ a{
    outline-offset: 3px;
  }
 
+ .github-btn{
+   border: 1px #fff solid;
+   text-decoration: none;
+ }
+.github-btn:hover {
+   border: 1px #000 solid;
+}
 
 /*=====Projects====*/
 .projects {
@@ -118,6 +127,7 @@ a{
    margin:0 20px;
    padding-top: 20px;
    border:2px #ffb3c6 solid;
+   
 }
 
 .project-images {
@@ -126,6 +136,7 @@ a{
 .container:hover {
   background-color: #ffb3c6 ;
   transition : .5s;
+  transform: scale(1.1);
 }
 
 .inside-container {
