@@ -1,6 +1,7 @@
 body {
+    width: 90%;
     box-sizing: border-box;
-    margin: 0;
+    margin: auto;
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif, Verdana;
     color: #303030;
@@ -48,7 +49,6 @@ a{
 }
 /*=====Introduction=====*/
 .intro{
-   width:90%;
    margin:auto;
    height:40vh;
 }
@@ -81,6 +81,23 @@ a{
    z-index: 1;
    margin:70px 200px;
 }
+.contact-btn{
+   margin-top: 10px;
+   padding: 15px 45px;
+   font-size: 1rem;
+   text-transform: uppercase;
+   cursor:pointer;
+   background-color:#ffb3c6;
+   border: none;
+   color:rgba(27, 2, 27,);
+   transition: transform 200 ease-in-out;
+ }
+ .contact-btn:hover {
+   transform: scale(1.2);
+   outline: 1px  solid #000;
+   outline-offset: 3px;
+ }
+
 
 /*=====Projects====*/
 .projects {
@@ -107,7 +124,7 @@ a{
   max-width: 50%;
 }
 .container:hover {
-  background-color: rgba(27, 2, 27, 0.062) ;
+  background-color: #ffb3c6 ;
   transition : .5s;
 }
 
@@ -117,21 +134,20 @@ a{
 
 /*====SKILLS===*/
 .skills{
-   
+   display:flex;
+   flex-direction: column;
+   height: 100vh;
+   margin: 1em 0;
+   padding: 1em ;
+   background-color: #ffb3c6c4;
+   font-size: large;
 }
 .skills-container {
-   display: flex;
-   width: 90%;
    margin:  auto;
-}
-.skill-container-inside {
-   background-color: #ffb3c6;
-   border: 2px white solid;
-   padding: 10px;
 }
 
 .skills-images{
-   max-width: 20%;
+   max-width: 30%;
 }  
 
 /*====WORKPROCESS===*/
@@ -153,8 +169,13 @@ a{
 
 /*===ABOUT-ME===*/
 .about-me{
-   width: 90%;
-   margin: 0 auto;
+height: 50vh;
+padding-top: 1em;
+background-color: #ffb3c694;
+background-image: url(computer-background.jpg);
+background-blend-mode: lighten;
+background-size: cover;
+ 
 }
 /*====FOOTER===*/
 footer {
@@ -213,19 +234,20 @@ footer {
    }
  /*INTRO*/
  .intro{
-   display: flex;
-   flex-direction: column;
+    display: flex;
+    flex-direction: column;
 
  }
  section {
-   padding: 3em .5em;
+    padding: 3em .5em;
  }
 
  .profile-picture{
-display:inline-block;
-position:initial;
-margin:20px auto;
+    display:inline-block;
+    position:initial;
+    margin:20px auto;
  }
+
 
  /*===Projects===*/
  .containers {
@@ -235,6 +257,9 @@ margin:20px auto;
    width: 90%;
    margin: 0 auto;
    gap:5px;
+}
+.skills-images{
+  max-width:60%;
 }
 
  }
